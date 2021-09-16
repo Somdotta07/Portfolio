@@ -1,50 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
 body {
-  padding: 0;
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .tool-bar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   background-color: #3c3a39;
-  height: 48px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  width: auto;
+  padding-left: 24px;
+  padding-right: 19px;
 }
 
 .tool-bar a {
-  color: rgb(187, 171, 171);
   font-family: 'Roboto', sans-serif;
-  padding: 12px 24px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
   text-decoration: none;
+  color: #fff;
+  padding: 12px 24px;
 }
 
-.fas {
-  color: #ffff;
-  padding: 19px 36px;
+.menu {
+  margin-top: 20px;
+  width: 18px;
+  height: 12px;
+  color: #fff;
 }
 
 .container {
-  margin-top: 48px;
-  background-image: url(../media/background.png);
-  background-size: cover;
-  background-color: black;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1a19;
   height: 590px;
+  padding: 120px 24px;
+  top: 92px;
 }
 
-h2 {
+h1 {
   color: #ff6b00;
   font-family: 'Crete Round', serif;
   font-style: normal;
@@ -57,29 +53,46 @@ h2 {
   margin: 12px 0;
 }
 
-h4,
-p,
-.fab {
-  color: #ffff;
-  margin-left: 24px;
-}
-
 h4 {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  align-items: center;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 32px;
   color: #fff5e1;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  height: 27px;
+  margin: 12px;
 }
 
 p {
   font-family: 'Popins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 12px;
+  color: #fff;
 }
 
-.links {
+.background {
+  position: absolute;
+  top: 450px;
+  right: 0;
+}
+
+.link {
+  display: flex;
+  padding: 0;
   height: 40px;
-  margin-left: 20px;
+}
+
+ul {
+  display: flex;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+  justify-self: flex-start;
+}
+
+.fab {
+  color: #dbd8d7;
 }

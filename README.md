@@ -24,7 +24,7 @@ Setup :
     Add .gitignore file where we are keeping the files which we have to ignore.
     Add linter files .hintrc and .stylelintrc.json to fix the errors
     Take template from Figma
-    
+    Add icons with <a> tag
    
 
 Install: node.js
@@ -34,7 +34,7 @@ To open the project you can simply download and double click the index.html file
     
 Authors
 
-👤 Author1
+👤 Somdotta Sarkar
 
     GitHub: https://github.com/Somdotta07
     Twitter:https://twitter.com/iloveenv
@@ -49,6 +49,7 @@ Give a ⭐️ if you like this project!
 Acknowledgments
 
     Microverse
+    Figma
     coding partners
 
 📝 License
