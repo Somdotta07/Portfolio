@@ -7,20 +7,20 @@ body {
 .tool-bar {
   display: flex;
   justify-content: space-between;
-  background-color:#3c3a39;
+  background-color: #3c3a39;
   width: auto;
   padding-left: 24px;
   padding-right: 19px;
 }
 
 .tool-bar a {
-  font-family: 'Roboto' , sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;
   font-style: normal;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   padding: 12px 24px;
 }
 
@@ -28,7 +28,7 @@ body {
   margin-top: 20px;
   width: 18px;
   height: 12px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .container {
@@ -36,7 +36,7 @@ body {
   flex-direction: column;
   background-color: #1c1a19;
   height: 590px;
-  padding: 120px 24px ;
+  padding: 120px 24px;
   top: 92px;
 }
 
@@ -54,20 +54,20 @@ h1 {
 }
 
 h4 {
-  font-family: 'Roboto' , sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   line-height: 32px;
   color: #fff5e1;
   height: 27px;
-  margin: 12px 0px;
+  margin: 12px;
 }
 
 p {
   font-family: 'Popins', sans-serif;
   font-size: 16px;
   line-height: 24px;
-  margin: 12px 0px;
-  color: #ffffff;
+  margin: 12px;
+  color: #fff;
 }
 
 .background {
@@ -85,14 +85,14 @@ p {
 ul {
   display: flex;
   padding-left: 0;
-  list-style-type:none;
+  list-style-type: none;
 }
 
 li {
   padding: 10px;
   justify-self: flex-start;
-  }
+}
 
 .fab {
   color: #dbd8d7;
-  }
+}
