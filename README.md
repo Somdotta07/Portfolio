@@ -4,13 +4,14 @@ Portfolio
 
 image
 
+
 The portfolio is made of HTML and CSS . To be updated.
 Built With
 
     HTML and CSS
 
 Live Demo
-
+http://127.0.0.1:5500/index.html
 
 Getting Started:
 
@@ -22,12 +23,15 @@ Setup :
     add a copy of [.github/workflows/linters.yml] to .github/workflows folder
     Add .gitignore file where we are keeping the files which we have to ignore.
     Add linter files .hintrc and .stylelintrc.json to fix the errors
+    Take template from Figma
+    
    
 
 Install: node.js
 Usage:
 
-Right click inside the HTML file and open with live server or double click the HTML file
+To open the project you can simply download and double click the index.html file
+    
 Authors
 
 👤 Author1
