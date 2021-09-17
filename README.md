@@ -4,6 +4,7 @@ Portfolio
 
 image
 
+// To be updated
 
 The portfolio is made of HTML and CSS . To be updated.
 Built With
@@ -16,7 +17,7 @@ http://127.0.0.1:5500/index.html
 Getting Started:
 
 
-Prerequisites: VS code editor and gitbash
+Prerequisites: VS code editor and gitbash. node.js
 Setup :
 
     In the VS code add 1 HTML and 1 CSS file
