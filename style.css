@@ -233,13 +233,13 @@ hr {
 }
 
 .lang-dis {
-  display: flex;
   padding-left: 16px;
 }
 
 .lang-box-dis {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */ 
+  float: left;
   list-style-type: none;
   padding: 10px 12px;
   box-sizing: border-box;
