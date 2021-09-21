@@ -238,7 +238,6 @@ hr {
 
 .lang-box-dis {
   display: flex;
-  /* flex-direction: row; */ 
   float: left;
   list-style-type: none;
   padding: 10px 12px;
@@ -391,13 +390,13 @@ hr {
 }
 
 .contact-form h2 {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   margin-top: 120px;
   margin-bottom: 60px;
   width: 327px;
@@ -410,7 +409,7 @@ hr {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #e5e5e5;
   padding-bottom: 70px;
 }
 
@@ -432,7 +431,6 @@ hr {
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
-  border-bottom: 1px thin #DBD8D7;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -441,13 +439,13 @@ hr {
 }
 
 .contact-form form ul textarea {
-  background-color: #FBF8F7;
+  background-color: #fbf8f7;
   border: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
 .contact-form form button {
@@ -456,9 +454,9 @@ hr {
   width: 131px;
   height: 48px;
   left: 98px;
-  top: calc(50% - 48px/2 + 141px);
-  background: #FF6B00;
-  font-family: Inter;
+  top: calc(50% - 48px / 2 + 141px);
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -468,15 +466,15 @@ hr {
 }
 
 .contact-form .links i {
-  color: #505F79;
+  color: #505f79;
 }
 
 .contact-form .end-line {
   margin-bottom: 20px;
   width: 134px;
   height: 5px;
-  left: calc(50% - 134px/2 - 0.5px);
+  left: calc(50% - 134px / 2 - 0.5px);
   bottom: 8px;
-  background: #0D151E;
+  background: #0d151e;
   border-radius: 10px;
 }
