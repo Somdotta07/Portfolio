@@ -77,8 +77,9 @@ p {
   right: 0;
 }
 
- .links {
+ .container,.links {
   display: flex;
+  flex-direction: column;
 }
 
 .icons {
@@ -655,11 +656,12 @@ hr {
 
   .container.links, .container.icons, .container.icons-list {
     display: flex;
-    flex-direction: column;
-    order: -1;
+    flex-direction: row;
+    /* order: -1; */
   }
   .container ,.paragraph,h1 {
-    
+    display: flex;
+    flex-direction: row;
   }
   
   
