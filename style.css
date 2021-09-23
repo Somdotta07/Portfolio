@@ -120,10 +120,10 @@ p {
 }
 
 hr {
-  text-align: center;
-  border: 1px solid #fff;
-  margin: 24px;
-  width: 120px;
+  border: 1px solid  #212121;
+  width: 60%;
+  margin-top: -130px;
+  margin-left: 510px;
 }
 
 .img {
@@ -148,7 +148,7 @@ hr {
 
 .info-detail {
   padding-left: 24px;
-  text-align: left;
+  text-align: center;
   font-family: 'Inter', sans-serif;
   color: #091e42;
   font-style: normal;
@@ -482,4 +482,295 @@ hr {
   bottom: 8px;
   background: #0d151e;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tool-bar .right {
+    display: none;
+  }
+
+  .project-container {
+    display: grid;
+    padding-top: 50px;
+    margin-left: 15px;
+  }
+
+  .project-heading {
+    text-align: center;
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    color: #1c1a19;
+    padding-bottom: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+/* ----End of Mobile Version----------------- */
+
+/* -----ipad Version-------------------------- */
+@media only screen and (min-width: 600px) {
+  .tool-bar .right {
+    display: none;
+  }
+
+  .project-display {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* -----Desktop Version------------- */
+
+@media only screen and (min-width: 992px) {
+  /* ---Header----- */
+
+  .menu {
+    display: none;
+  }
+
+  .tool-bar a {
+    left: 12px;
+    top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .tool-bar .right {
+    left: 12px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .tool-bar .right a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  /* ----Introduction--------------- */
+
+  .container {
+    display: grid;
+    grid-template-columns: 70px 2fr;
+    background-image: url(media/responsive-background.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+  }
+
+  .background {
+    display: none;
+  }
+
+  .container .links,
+  .top {
+    display: flex;
+    flex-direction: column;
+    order: -1;
+    justify-content: center;
+  }
+
+  .container.paragraph {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ----Project Container------------ */
+  .project-container {
+    display: grid;
+    padding: 20px;
+  }
+
+  .project-container hr {
+    border: 1px solid  #212121;
+    width: 60%;
+    margin-top: -130px;
+    margin-left: 510px;
+  }
+
+  .project-heading {
+    text-align: justify;
+    padding-left: 150px;
+  }
+
+  .img {
+    float: left;
+    width: 684px;
+    height: 448px;
+    padding: 50px;
+    margin-top: 2px;
+    margin-left: 60px;
+  }
+
+  .info-title,
+  .info-detail,
+  .lang {
+    justify-items: right;
+    margin-top: 50px;
+  }
+
+  .btn {
+    float: left;
+    background: #ff6b00;
+    color: #fff;
+    width: 120px;
+    height: 48px;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+    margin: 30px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 24px;
+    cursor: pointer;
+    transition-duration: 00.4s;
+  }
+
+  .project-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .firstproject {
+    background-image: url(media/project.png);
+    opacity: 1;
+  }
+
+  .secondproject,
+  .fifthproject {
+    background-image: url(media/layout2nd.png);
+    opacity: 1;
+  }
+
+  .thirdproject,
+  .sixthproject {
+    background-image: url(media/layout3rd.png);
+    opacity: 1;
+  }
+
+  .forthproject {
+    background-image: url(media/Layout.png);
+    opacity: 1;
+  }
+
+  .contact-form form ul {
+    width: 90%;
+  }
+
+  .firstproject:first-child ul,
+  .firstproject:first-child h3,
+  .firstproject:first-child p {
+    visibility: hidden;
+  }
+
+  .display .btn-dis {
+    display: none;
+  }
+
+  .display:first-child .btn-dis {
+    display: block;
+  }
+
+  /* -------------About Me---------------------- */
+
+  .about-me {
+    background-image: url(media/illustration-about\ me@2x.png);
+    background-position: 100% 15%;
+    background-size: 35%;
+    border: hidden;
+  }
+
+  .about-me-heading,
+  .about-me-content,
+  .btn-about-me {
+    display: flex;
+    text-align: justify;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .about-me-heading {
+    font-size: 72px;
+    line-height: 81px;
+  }
+
+  .about-me-content {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  /* ---------------Programming Language------------ */
+
+  .prg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: baseline;
+    margin-bottom: 120px;
+    width: 1024px;
+    margin-left: 150px;
+  }
+
+  /* ----------Contact Form--------------- */
+
+  .contact-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .contact-form h2 {
+    width: 30%;
+    margin-right: 2%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: justify;
+  }
+
+  .contact-form form {
+    width: 55%;
+    align-items: flex-start;
+    border-bottom: none;
+  }
+
+  .contact-form .links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 100px;
+    border-top: 1px solid #343536;
+  }
+
+  .contact-form form button {
+    margin-left: 15px;
+  }
+
+  .contact-form .end-line {
+    display: none;
+  }
 }
