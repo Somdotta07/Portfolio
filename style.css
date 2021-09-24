@@ -96,6 +96,29 @@ p {
   color: #dbd8d7;
 }
 
+.links .top li {
+  transition-property: margin-top, margin-bottom;
+  transition-duration: 0.5s;
+}
+
+.links .top i {
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.contact-form .links i {
+  color: #505f79;
+}
+
+.links .top i:hover {
+  color: #15aabf;
+}
+
+.links .top li:hover {
+  margin-top: -2px;
+  margin-bottom: 3px;
+}
+
 /* ----Project Page------- */
 
 .project-container {
@@ -362,16 +385,25 @@ hr {
   padding-top: 100px;
   margin: 12px;
   list-style-image: url(media/rhombus.png);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prg-h2 {
-  margin: 44px 0 12px 0;
+  margin: 30px 0 12px 0;
   list-style-image: url(media/square.png);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prg-h3 {
   margin: 44px 0 12px 0;
   list-style-image: url(media/circle.png);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prg-items {
@@ -470,10 +502,6 @@ hr {
   color: #091e42;
 }
 
-.contact-form .links i {
-  color: #505f79;
-}
-
 .contact-form .end-line {
   margin-bottom: 20px;
   width: 134px;
@@ -520,6 +548,19 @@ hr {
   .project-display {
     display: flex;
     flex-wrap: wrap;
+    animation-name: go-down;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes go-down {
+    from {
+      margin-top: -30px;
+    }
+
+    to {
+      margin-top: 0;
+    }
   }
 }
 
@@ -727,8 +768,15 @@ hr {
     align-items: baseline;
     margin-bottom: 120px;
     width: 1024px;
-    margin-left: 150px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  /* .prg-div1,
+  .prg-div2,
+  .prg-div3 {
+    list-style-image:;
+  } */
 
   /* ----------Contact Form--------------- */
 
