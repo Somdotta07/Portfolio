@@ -97,8 +97,8 @@ p {
 }
 
 .links .top li {
-   transition-property: margin-top, margin-bottom;
-   transition-duration: 0.5s;
+  transition-property: margin-top, margin-bottom;
+  transition-duration: 0.5s;
 }
 
 .links .top i {
@@ -106,8 +106,12 @@ p {
   transition-duration: 0.5s;
 }
 
+.contact-form .links i {
+  color: #505f79;
+}
+
 .links .top i:hover {
-  color : #15AABF;
+  color: #15aabf;
 }
 
 .links .top li:hover {
@@ -498,10 +502,6 @@ hr {
   color: #091e42;
 }
 
-.contact-form .links i {
-  color: #505f79;
-}
-
 .contact-form .end-line {
   margin-bottom: 20px;
   width: 134px;
@@ -557,6 +557,7 @@ hr {
     from {
       margin-top: -30px;
     }
+
     to {
       margin-top: 0;
     }
