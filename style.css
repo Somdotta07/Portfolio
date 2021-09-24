@@ -96,6 +96,25 @@ p {
   color: #dbd8d7;
 }
 
+.links .top li {
+   transition-property: margin-top, margin-bottom;
+   transition-duration: 0.5s;
+}
+
+.links .top i {
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.links .top i:hover {
+  color : #15AABF;
+}
+
+.links .top li:hover {
+  margin-top: -2px;
+  margin-bottom: 3px;
+}
+
 /* ----Project Page------- */
 
 .project-container {
@@ -365,7 +384,7 @@ hr {
 }
 
 .prg-h2 {
-  margin: 44px 0 12px 0;
+  margin: 30px 0 12px 0;
   list-style-image: url(media/square.png);
 }
 
@@ -729,6 +748,12 @@ hr {
     width: 1024px;
     margin-left: 150px;
   }
+
+  /* .prg-div1,
+  .prg-div2,
+  .prg-div3 {
+    list-style-image:;
+  } */
 
   /* ----------Contact Form--------------- */
 
