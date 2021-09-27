@@ -19,7 +19,7 @@ It's a portfolio project and template taken from Figma
 
 ## Live Demo
 
-[Live Demo Link](  https://somdotta07.github.io/Portfolio/)
+[Live Demo Link]( https://somdotta07.github.io/Portfolio/)
 
 
 ## Getting Started :
