@@ -119,7 +119,7 @@ p {
   margin-bottom: 3px;
 }
 
-a:focus-visible {
+:focus-visible {
   border: 4px dotted black;
 }
 
@@ -227,10 +227,6 @@ hr {
   color: #091e42;
 }
 
-.btn:focus-visible {
-  border: 4px dotted black;
-}
-
 /* ----------------Project Display-------- */
 
 .display {
@@ -300,10 +296,6 @@ hr {
 .btn-dis:hover {
   background: rgb(219, 180, 120);
   color: #091e42;
-}
-
-btn:focus-visible {
-  border: 4px dotted black;
 }
 
 /* -----About Me----- */
