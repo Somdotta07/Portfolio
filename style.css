@@ -119,6 +119,10 @@ p {
   margin-bottom: 3px;
 }
 
+a:focus-visible {
+  border: 4px dotted black;
+}
+
 /* ----Project Page------- */
 
 .project-container {
@@ -202,7 +206,7 @@ hr {
 .btn {
   display: flex;
   background: #ff6b00;
-  color: #fff;
+  color: #000;
   width: 120px;
   height: 48px;
   align-items: center;
@@ -221,6 +225,10 @@ hr {
 .btn:hover {
   background-color: rgb(219, 180, 120);
   color: #091e42;
+}
+
+.btn:focus-visible {
+  border: 4px dotted black;
 }
 
 /* ----------------Project Display-------- */
@@ -276,9 +284,9 @@ hr {
 
 .btn-dis {
   background: #ff6b00;
-  color: #fff;
+  color: #000;
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: bold;
   line-height: 24px;
   height: 48px;
@@ -292,6 +300,10 @@ hr {
 .btn-dis:hover {
   background: rgb(219, 180, 120);
   color: #091e42;
+}
+
+btn:focus-visible {
+  border: 4px dotted black;
 }
 
 /* -----About Me----- */
@@ -334,7 +346,7 @@ hr {
 .btn-about-me {
   display: flex;
   background: #ff6b00;
-  color: #fff;
+  color:  #000;
   width: 161px;
   height: 48px;
   align-items: center;
@@ -494,7 +506,7 @@ hr {
   font-size: 17px;
   line-height: 24px;
   border: 0;
-  color: #fff;
+  color:  #000;
 }
 
 .contact-form form button:hover {
@@ -670,7 +682,7 @@ hr {
   .btn {
     float: left;
     background: #ff6b00;
-    color: #fff;
+    color:  #000;
     width: 120px;
     height: 48px;
     align-items: center;
