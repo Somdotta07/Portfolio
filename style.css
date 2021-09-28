@@ -338,7 +338,7 @@ hr {
 .btn-about-me {
   display: flex;
   background: #ff6b00;
-  color:  #000;
+  color: #000;
   width: 161px;
   height: 48px;
   align-items: center;
@@ -498,7 +498,7 @@ hr {
   font-size: 17px;
   line-height: 24px;
   border: 0;
-  color:  #000;
+  color: #000;
 }
 
 .contact-form form button:hover {
@@ -674,7 +674,7 @@ hr {
   .btn {
     float: left;
     background: #ff6b00;
-    color:  #000;
+    color: #000;
     width: 120px;
     height: 48px;
     align-items: center;
