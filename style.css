@@ -8,6 +8,8 @@ body {
 .tool-bar {
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
   background-color: #3c3a39;
   width: auto;
   padding-left: 24px;
