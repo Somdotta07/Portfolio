@@ -624,7 +624,11 @@ hr {
 @media only screen and (min-width: 992px) {
   /* ---Header----- */
 
-  .menu {
+  .display-mobile {
+    display: none;
+  }
+
+  header .hamburger {
     display: none;
   }
 
