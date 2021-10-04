@@ -22,13 +22,29 @@
         <header class="tool-bar">
             
             <a href="#">Somdotta</a>
-            <div class="tool-bar right">
+            <div class="tool-bar right" id="tool-bar-right">
                 <a href="#portfolio">Portfolio</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
                 <a href="#Message"><i class="far fa-envelope"></i></a>
             </div> 
-            <nav class="menu"><i class="fas fa-bars"></i></nav>   
+            <nav class="menu" id="hamburger"><i class="fas fa-bars"></i></nav>
+            <div class="mobile-menu display-none">
+                <div class="close">
+                    <a href="#" id="close-menu">x</a>
+                </div> 
+                <ul>
+                    <li>
+                        <a class="menu-links" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="menu-links"  href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="menu-links"  href="#contact">Contact</a>
+                    </li>
+                </ul>     
+            </div>
         </header>
            
         <section class="container">
@@ -230,5 +246,6 @@
        </div> 
        <div class="end-line"></div>
     </Section>
+    <script src="script.js"></script>
 </body>
 </html>
