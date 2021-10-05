@@ -15,7 +15,7 @@ It's a portfolio project and template taken from Figma
 
 - HTML 
 - CSS
-
+- JavaScript
 
 ## Live Demo
 
@@ -49,8 +49,17 @@ Use an IDE to develop and run it into your browser.
 - [Twitter](https://github.com/Somdotta07)
 - [LinkedIn](https://www.linkedin.com/in/somdotta-sarkar-8849b419/)
 
+
 👤 Shahier Nashaat
-- [Github](https://github.com/ShahierNashaat)
+   - [Github](https://github.com/ShahierNashaat)
+
+
+👤 Gints Misins 
+   - [Github](https://github.com/GintsM)
+
+
+👤 Karel Van Oordt
+  - [Github](https://github.com/karelvanoordt)
 
 ## 🤝 Contributing
 
