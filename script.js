@@ -51,12 +51,24 @@ openButton.addEventListener('click', () => {
   modal.appendChild(heading);
   //Technologies
   const technologies = document.createElement('ul');
-  technologies.appendChild(modal);
- for (let key in Object){
-   let li =document.createElement('li');
-   li.textContent= this.technologies;
-   li.appendChild(technologies)
- }
+  technologies.classList.add('technologies-container');
+  modal.appendChild(technologies);
+
+  const techList1 = document.createElement('li');
+  techList1.textContent('HTML');
+  techList1.classList.add('techlist');
+  technologies.appendChild(techList1);
+
+  const techList2 = document.createElement('li');
+  techList2.textContent('CSS');
+  techList2.classList.add('techlist');
+  technologies.appendChild(techList2);
+
+  const techList3 = document.createElement('li');
+  techList3.textContent('JAVASCRIPT');
+  techList3.classList.add('techlist');
+  technologies.appendChild(techList3);
+
   //paragraph
   const description = document.createElement('p');
   description.textContent(details.description);
@@ -70,5 +82,17 @@ openButton.addEventListener('click', () => {
   const buttonContainer = document.createElement('div');
   buttonContainer.classList.add('button-actions');
   modal.appendChild(buttonContainer);
+    //Button 1
+    const buttton1 = document.createElement('button');
+    buttton1.setAttribute('type', 'button');
+    buttton1.classList.add('buttonLink');
+    buttonContainer.appendChild(button1);
+
+    const button2 = document.createElement('button');
+    button2.setAttribute('type', 'button');
+    buttton2.classList.add('buttonSource');
+    buttonContainer.appendChild(button2);
+
   
+    document.body.insertBefore(modal, projectContainer);
 })
