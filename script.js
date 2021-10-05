@@ -26,7 +26,7 @@ const details = {
 
 
 const openButton = document.getElementById('open');
-const projectContainer = document.querySelector('.project-container');
+const container = document.querySelector('.container');
 let backdrop;
 let modal;
 function closeModal() {
@@ -40,7 +40,7 @@ openButton.addEventListener('click', () => {
   backdrop = document.createElement('div');
   backdrop.classList.add('backdrop');
   backdrop.addEventListener('click', closeModal);
-  document.body.insertBefore(backdrop, projectContainer);
+  document.body.insertBefore(backdrop, container);
 // Modal
 
   modal = document.createElement('div');
@@ -55,23 +55,23 @@ openButton.addEventListener('click', () => {
   modal.appendChild(technologies);
 
   const techList1 = document.createElement('li');
-  techList1.textContent('HTML');
+  techList1.textContent = 'HTML';
   techList1.classList.add('techlist');
   technologies.appendChild(techList1);
 
   const techList2 = document.createElement('li');
-  techList2.textContent('CSS');
+  techList2.textContent = 'CSS';
   techList2.classList.add('techlist');
   technologies.appendChild(techList2);
 
   const techList3 = document.createElement('li');
-  techList3.textContent('JAVASCRIPT');
+  techList3.textContent = 'JAVASCRIPT';
   techList3.classList.add('techlist');
   technologies.appendChild(techList3);
 
   //paragraph
   const description = document.createElement('p');
-  description.textContent(details.description);
+  description.textContent = 'Lorem Ipsum';
   description.classList.add('modal-description');
   modal.appendChild(description);
   //image
@@ -83,16 +83,15 @@ openButton.addEventListener('click', () => {
   buttonContainer.classList.add('button-actions');
   modal.appendChild(buttonContainer);
     //Button 1
-    const buttton1 = document.createElement('button');
-    buttton1.setAttribute('type', 'button');
-    buttton1.classList.add('buttonLink');
-    buttonContainer.appendChild(button1);
+  const button1 = document.createElement('button');
+  button1.setAttribute('type', 'button');
+  button1.classList.add('buttonLink');
+  buttonContainer.appendChild(button1);
 
-    const button2 = document.createElement('button');
-    button2.setAttribute('type', 'button');
-    buttton2.classList.add('buttonSource');
-    buttonContainer.appendChild(button2);
+  const button2 = document.createElement('button');
+  button2.setAttribute('type', 'button');
+  button2.classList.add('buttonSource');
+  buttonContainer.appendChild(button2);
 
-  
-    document.body.insertBefore(modal, projectContainer);
-})
+  document.body.insertBefore(modal, container);
+});
