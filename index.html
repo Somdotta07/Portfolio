@@ -221,7 +221,7 @@
     <!-- Form -->
     <section class="contact-form" id="contact">
     <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-    <form action="https://formspree.io/f/mjvjlpvw"    method="post">
+    <form action="https://formspree.io/f/mjvjlpvw"  class="contact-form"  method="post">
         <ul>
             <li>
                
@@ -229,7 +229,8 @@
             </li>
             <li>
                
-               <input type="email" id="mail" name="user_email" placeholder="Email addresss" required>
+               <input type="email" id="mail" name="user_email"  onkeydown= "validation()" placeholder="Email addresss" required>
+               <span id="text"></span>
            </li>
            <li>
                
