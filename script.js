@@ -25,7 +25,7 @@ form.addEventListener('submit', (event) => {
     errorMsg.style.color = '#00ff00';
   } else {
     event.preventDefault();
-    errorMsg.innerHTML = 'Not a valid Email';
+    errorMsg.innerHTML = 'Error Email Not Valid: You must use lowercase in the email field';
     errorMsg.style.color = '#ff0000';
   }
 });
