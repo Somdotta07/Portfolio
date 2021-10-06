@@ -1,7 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable prefer-destructuring */
-/* eslint-disable linebreak-style */
-
 const hamburger = document.querySelector('.hamburger');
 const toolbar = document.querySelector('.mobile-menu');
 hamburger.addEventListener('click', () => {
