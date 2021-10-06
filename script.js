@@ -178,31 +178,12 @@ function validation() {
   if (email.match(pattern)) {
     form.classList.add('valid');
     form.classList.remove('invalid');
-    text.innerHTML = 'Valid Email';
+    text.innerHTML = 'This is a valid Email';
     text.style.color = '#00ff00';
   } else {
     form.classList.add('invalid');
     form.classList.remove('valid');
-    text.innerHTML = 'Invalid Email';
+    text.innerHTML = 'Not a valid Email';
     text.style.color = '#ff0000';
   }
-<<<<<<< HEAD
-  if (email === '') {
-    form.classList.remove('invalid');
-    form.classList.remove('valid');
-    text.innerHTML = '';
-  }
-
 }
-=======
-  // if (email === '') {
-  //   form.classList.remove('invalid');
-  //   form.classList.remove('valid');
-  //   text.innerHTML = '';
-  // }
-}
-// form.addEventListener('submit', (event) => {
-//   event.preventDefault();
-//   validation();
-// });
->>>>>>> 8bf361d17eb876a7f68e5b96875d9a9a3913f528
