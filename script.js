@@ -63,71 +63,70 @@ let backdrop;
 // let modal;
 
 //  --For loop----
-function closeModal() {
-  if (backdrop) {
-    backdrop.remove();
-  }
+// function closeModal() {
+//   if (backdrop) {
+//     backdrop.remove();
+//   }
+// }
+
+for (let i = 0; i < projectCard.length; i += 1) {
+  openButton.addEventListener('click', () => {
+    backdrop = document.createElement('div');
+    backdrop.classList.add('backdrop');
+    // backdrop.addEventListener('click', closeModal);
+    document.body.insertBefore(backdrop, container);
+    // Modal
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    // Heading
+    const heading = document.createElement('h2');
+    heading.textContent = projectCard[i].name;
+    modal.appendChild(heading);
+    // Technologies
+    const technologies = document.createElement('ul');
+    technologies.classList.add('technologies-container');
+    modal.appendChild(technologies);
+    // Tech groups
+    const techList1 = document.createElement('li');
+    techList1.textContent = projectCard[i].technologies[0];
+    techList1.classList.add('techlist');
+    technologies.appendChild(techList1);
+    const techList2 = document.createElement('li');
+    techList2.textContent = projectCard[i].technologies[1];
+    techList2.classList.add('techlist');
+    technologies.appendChild(techList2);
+    const techList3 = document.createElement('li');
+    techList3.textContent = projectCard[i].technologies[2];
+    techList3.classList.add('techlist');
+    technologies.appendChild(techList3);
+    // paragraph
+    const description = document.createElement('p');
+    description.textContent = projectCard[i].description;
+    description.classList.add('modal-description');
+    modal.appendChild(description);
+    // image
+    const image = document.createElement('img');
+    image.classList.add('modal-image');
+    image.src = projectCard[i].image;
+    modal.appendChild(image);
+    // Buttons
+    const buttonContainer = document.createElement('div');
+    buttonContainer.classList.add('button-actions');
+    modal.appendChild(buttonContainer);
+    // Button 1
+    const button1 = document.createElement('button');
+    button1.setAttribute('type', 'button');
+    button1.classList.add('buttonLink');
+    button1.textContent = 'Live link';
+    button1.href = projectCard[i].link;
+    buttonContainer.appendChild(button1);
+    // Button 2
+    const button2 = document.createElement('button');
+    button2.setAttribute('type', 'button');
+    button2.classList.add('buttonSource');
+    button2.href = projectCard[i].source;
+    button2.textContent = 'Source link';
+    buttonContainer.appendChild(button2);
+    document.body.insertBefore(modal, container);
+  });
 }
-
-openButton.addEventListener('click', () => {
-  backdrop = document.createElement('div');
-  backdrop.classList.add('backdrop');
-  backdrop.addEventListener('click', closeModal);
-  document.body.insertBefore(backdrop, container);
-  // Modal
-
-  const modal = document.createElement('div');
-  modal.classList.add('modal');
-  // Heading
-  const heading = document.createElement('h2');
-  heading.textContent = projectCard[0].name;
-  modal.appendChild(heading);
-  // Technologies
-  const technologies = document.createElement('ul');
-  technologies.classList.add('technologies-container');
-  modal.appendChild(technologies);
-
-  const techList1 = document.createElement('li');
-  techList1.textContent = projectCard[0].technologies[0];
-  techList1.classList.add('techlist');
-  technologies.appendChild(techList1);
-
-  const techList2 = document.createElement('li');
-  techList2.textContent = projectCard[0].technologies[1];
-  techList2.classList.add('techlist');
-  technologies.appendChild(techList2);
-
-  const techList3 = document.createElement('li');
-  techList3.textContent = projectCard[0].technologies[2];
-  techList3.classList.add('techlist');
-  technologies.appendChild(techList3);
-
-  // paragraph
-  const description = document.createElement('p');
-  description.textContent = projectCard[0].description;
-  description.classList.add('modal-description');
-  modal.appendChild(description);
-  // image
-  const image = document.createElement('img');
-  image.classList.add('modal-image');
-  image.src = projectCard[0].image;
-  modal.appendChild(image);
-  // Buttons
-  const buttonContainer = document.createElement('div');
-  buttonContainer.classList.add('button-actions');
-  modal.appendChild(buttonContainer);
-  // Button 1
-  const button1 = document.createElement('button');
-  button1.setAttribute('type', 'button');
-  button1.classList.add('buttonLink');
-  button1.href = projectCard[0].link;
-  buttonContainer.appendChild(button1);
-
-  const button2 = document.createElement('button');
-  button2.setAttribute('type', 'button');
-  button2.href = projectCard[0].source;
-  button2.classList.add('buttonSource');
-  buttonContainer.appendChild(button2);
-
-  document.body.insertBefore(modal, container);
-});
