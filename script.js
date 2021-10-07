@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 // Mobile menu
 const hamburger = document.querySelector('.hamburger');
 const toolbar = document.querySelector('.mobile-menu');
@@ -37,20 +38,21 @@ const inputName = document.getElementById('name');
 const inputEmail = document.getElementById('email');
 const inputMsg = document.getElementById('msg');
 const submitBtn = document.getElementById('submit-btn');
-const formSt = [];
 
 const addForm = (event) => {
-  event.preventDefault(); // to stop the form submitting
-  const data = {
-    name: inputName.value,
-    email: inputEmail.value,
-    message: inputMsg.value,
-  };
-  formSt.push(data);
-
-  localStorage.setItem('Form Information', JSON.stringify(formSt));
+  event.preventDefault();
+  if (typeof (Storage) !== 'undefined') {
+    const data = {
+      name: inputName.value,
+      email: inputEmail.value,
+      message: inputMsg.value,
+    };
+    window.localStorage.setItem('Form data', JSON.stringify(data));
+    document.getElementById('pre-msg').innerHTML = JSON.parse(window.localStorage.getItem('Form data'));
+  } else {
+    document.getElementById('pre-msg').innerHTML = 'Sorry, your browser does not support Web Storage';
+  }
 };
-
 document.addEventListener('DOMContentLoaded', () => {
   submitBtn.addEventListener('click', addForm);
 });
