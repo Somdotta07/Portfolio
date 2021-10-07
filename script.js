@@ -1,4 +1,4 @@
-/* eslint-disable linebreak-style */
+/* eslint-disable indent *//* eslint-disable linebreak-style */
 // Mobile menu
 const hamburger = document.querySelector('.hamburger');
 const toolbar = document.querySelector('.mobile-menu');
@@ -37,22 +37,32 @@ form.addEventListener('submit', (event) => {
 const inputName = document.getElementById('name');
 const inputEmail = document.getElementById('email');
 const inputMsg = document.getElementById('msg');
-const submitBtn = document.getElementById('submit-btn');
+// const submitBtn = document.getElementById('submit-btn');
 
-const addForm = (event) => {
-  event.preventDefault();
-  if (typeof (Storage) !== 'undefined') {
+// function addForm () {
+//   if (typeof (Storage) !== 'undefined') {
+//     const data = {
+//       name: inputName.value,
+//       email: inputEmail.value,
+// //       message: inputMsg.value,
+//     };
+
+  const addForm = (event) => {
+     event.preventDefault();
     const data = {
       name: inputName.value,
       email: inputEmail.value,
       message: inputMsg.value,
     };
-    window.localStorage.setItem('Form data', JSON.stringify(data));
-    document.getElementById('pre-msg').innerHTML = JSON.parse(window.localStorage.getItem('Form data'));
-  } else {
-    document.getElementById('pre-msg').innerHTML = 'Sorry, your browser does not support Web Storage';
-  }
-};
+    localStorage.setItem('Form data', JSON.stringify(data));
+  };
+form.addEventListener('change', addForm);
+
 document.addEventListener('DOMContentLoaded', () => {
-  submitBtn.addEventListener('click', addForm);
+  if (localStorage.getItem('Form data') !== null) {
+    const getData = JSON.parse(localStorage.getItem('Form data'));
+    inputName.value = getData.name;
+    inputEmail.value = getData.email;
+    inputMsg.value = getData.message;
+  }
 });
