@@ -1,4 +1,4 @@
-/* eslint-disable indent *//* eslint-disable linebreak-style */
+/* eslint-disable linebreak-style */
 // Mobile menu
 const hamburger = document.querySelector('.hamburger');
 const toolbar = document.querySelector('.mobile-menu');
@@ -37,27 +37,17 @@ form.addEventListener('submit', (event) => {
 const inputName = document.getElementById('name');
 const inputEmail = document.getElementById('email');
 const inputMsg = document.getElementById('msg');
-// const submitBtn = document.getElementById('submit-btn');
 
-// function addForm () {
-//   if (typeof (Storage) !== 'undefined') {
-//     const data = {
-//       name: inputName.value,
-//       email: inputEmail.value,
-// //       message: inputMsg.value,
-//     };
-
-  const addForm = (event) => {
-     event.preventDefault();
-    const data = {
-      name: inputName.value,
-      email: inputEmail.value,
-      message: inputMsg.value,
-    };
-    localStorage.setItem('Form data', JSON.stringify(data));
+const addForm = (event) => {
+  event.preventDefault();
+  const data = {
+    name: inputName.value,
+    email: inputEmail.value,
+    message: inputMsg.value,
   };
+  localStorage.setItem('Form data', JSON.stringify(data));
+};
 form.addEventListener('change', addForm);
-
 document.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('Form data') !== null) {
     const getData = JSON.parse(localStorage.getItem('Form data'));
