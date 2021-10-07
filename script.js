@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 // Mobile menu
 const hamburger = document.querySelector('.hamburger');
 const toolbar = document.querySelector('.mobile-menu');
@@ -34,6 +33,7 @@ form.addEventListener('submit', (event) => {
 });
 
 // preserve data in the browser
+ 
 const inputName = document.getElementById('name');
 const inputEmail = document.getElementById('email');
 const inputMsg = document.getElementById('msg');
@@ -48,11 +48,7 @@ const addForm = (event) => {
     message: inputMsg.value,
   };
   formSt.push(data);
-  // document.form[0].reset();// To clear the form
 
-  console.warn('added', { formSt });
-  const preMsg = document.querySelector('#pre-msg pre');
-  preMsg.textContent = `\n${JSON.stringify(formSt, '\t', 2)}`;
   localStorage.setItem('Form Information', JSON.stringify(formSt));
 };
 
