@@ -33,7 +33,6 @@ form.addEventListener('submit', (event) => {
 });
 
 // preserve data in the browser
- 
 const inputName = document.getElementById('name');
 const inputEmail = document.getElementById('email');
 const inputMsg = document.getElementById('msg');
