@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 // Mobile menu
 const hamburger = document.querySelector('.hamburger');
 const toolbar = document.querySelector('.mobile-menu');
