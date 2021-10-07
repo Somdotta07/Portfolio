@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+// Mobile menu
 const hamburger = document.querySelector('.hamburger');
 const toolbar = document.querySelector('.mobile-menu');
 hamburger.addEventListener('click', () => {
@@ -14,6 +16,7 @@ for (let i = 0; i < links.length; i += 1) {
   });
 }
 
+// Email validation
 const form = document.getElementById('contact-form');
 const errorMsg = document.getElementById('text');
 const email = document.getElementById('email');
@@ -28,4 +31,31 @@ form.addEventListener('submit', (event) => {
     errorMsg.innerHTML = 'Error Email Not Valid: You must use lowercase in the email field';
     errorMsg.style.color = '#ff0000';
   }
+});
+
+// preserve data in the browser
+const inputName = document.getElementById('name');
+const inputEmail = document.getElementById('email');
+const inputMsg = document.getElementById('msg');
+const submitBtn = document.getElementById('submit-btn');
+const formSt = [];
+
+const addForm = (event) => {
+  event.preventDefault(); // to stop the form submitting
+  const data = {
+    name: inputName.value,
+    email: inputEmail.value,
+    message: inputMsg.value,
+  };
+  formSt.push(data);
+  // document.form[0].reset();// To clear the form
+
+  console.warn('added', { formSt });
+  const preMsg = document.querySelector('#pre-msg pre');
+  preMsg.textContent = `\n${JSON.stringify(formSt, '\t', 2)}`;
+  localStorage.setItem('Form Information', JSON.stringify(formSt));
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  submitBtn.addEventListener('click', addForm);
 });
