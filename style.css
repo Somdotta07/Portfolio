@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
+  /* min-height: 100vh; */
   margin: auto;
   padding: 0;
   top: 0;
@@ -63,6 +64,11 @@ header .mobile-menu ul li {
   line-height: 44px;
   align-items: center;
   color: #fff5e1;
+}
+
+.modal ul {
+  display: flex;
+  padding-left: 24px;
 }
 
 header .mobile-menu ul {
@@ -168,38 +174,57 @@ p {
   margin-top: -2px;
   margin-bottom: 3px;
 }
+
 /* ----Modal----- */
+
 .backdrop {
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   mix-blend-mode: multiply;
-  background: #f0edec;
-  opacity: 0.8;
-  height: 100%;
-  width: 100%;
+  background: #979493;
+  width: 600px;
+  height: 900px;
   position: fixed;
-  top: 0;
-  left: 0;
-  /* z-index: 100; */
 }
 
 .modal {
- position: fixed;
- display: flex;
- flex-direction: column;
- align-items: center;
- padding: 16px;
- width: 90%;
- height: 100%;
- margin-left: 22px;
- top: 10%;
- background-color: #fff;
- border: 1px solid #dfe1e6;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  position: fixed;
+  width: 500px;
+  height: 780px;
+  margin-left: 50px;
+  justify-content: center;
+  top: 60px;
+  background: #fdfafa;
+  border: 1px solid #d9dbe0;
+  box-sizing: border-box;
 }
 
-.modal ul {
+.modal .modal-image {
+  position: static;
+  width: 311px;
+  height: 220px;
+  left: 16px;
+  top: 120px;
   display: flex;
-  padding-left: 24px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.modal .modal-description {
+  position: static;
+  width: 311px;
+  height: 220px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: 5px;
 }
 
 .modal .techlist {
@@ -219,10 +244,10 @@ p {
   color: #091e42;
 }
 
-.modal .modal-image {
+/* .modal .modal-image {
   display: flex;
   width: 70%;
-}
+} */
 
 .button-actions {
   display: flex;
@@ -230,9 +255,6 @@ p {
 }
 
 .button-actions .buttonLink {
-  width: 146px;
-  height: 48px;
-  margin: 20px;
   display: flex;
   background: #ff6b00;
   color: #fff;
@@ -252,10 +274,7 @@ p {
 }
 
 .button-actions .buttonSource {
-  width: 146px;
-  height: 48px;
-  margin: 20px;
-    display: flex;
+  display: flex;
   background: #ff6b00;
   color: #fff;
   width: 120px;
@@ -272,6 +291,11 @@ p {
   cursor: pointer;
   transition-duration: 00.4s;
 }
+
+.modal .closeBtnImg {
+  cursor: pointer;
+}
+
 /* ----Project Page------- */
 
 .project-container {
