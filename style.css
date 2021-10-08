@@ -3,7 +3,7 @@
 
 body {
   /* min-height: 100vh; */
-  margin: auto;
+  margin: 0;
   padding: 0;
   top: 0;
 }
@@ -128,7 +128,7 @@ p {
 }
 
 .background {
-  position: absolute;
+  /* position: absolute; */
   top: 450px;
   right: 0;
 }
@@ -166,6 +166,10 @@ p {
   color: #505f79;
 }
 
+.button-actions .buttonSource i {
+  padding: 4px;
+}
+
 .links .top i:hover {
   color: #15aabf;
 }
@@ -178,46 +182,81 @@ p {
 /* ----Modal----- */
 
 .backdrop {
-  /* backdrop-filter: blur(10px); */
+  backdrop-filter: blur(10px);
   mix-blend-mode: multiply;
   background: #979493;
-  width: 600px;
-  height: 900px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   position: fixed;
+  padding: 10px 12px;
 }
 
 .modal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
+  padding-top: 10px;
   position: fixed;
-  width: 500px;
-  height: 780px;
-  margin-left: 50px;
+  width: 90%;
+  height: auto;
+  margin: 20px;
   justify-content: center;
-  top: 60px;
   background: #fdfafa;
   border: 1px solid #d9dbe0;
   box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.modal .headingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.modal h2 {
+  display: flex;
+  color: #172b4d;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.modal .closeBtnImg {
+  border: 2px solid #edf0f3;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  cursor: pointer;
+}
+
+.modal .image-container {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: auto;
+  margin-left: 12px;
+  align-self: center;
+  justify-content: center;
 }
 
 .modal .modal-image {
-  position: static;
-  width: 311px;
-  height: 220px;
-  left: 16px;
-  top: 120px;
+  /* position: static; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
+  width: 90%;
 }
 
 .modal .modal-description {
-  position: static;
-  width: 311px;
-  height: 220px;
+  /* position: static; */
+  width: 80%;
+  height: 80%;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -232,7 +271,7 @@ p {
   box-sizing: border-box;
   border: 1px solid #8993a4;
   padding: 10px;
-  margin: 10px;
+  margin: 5px 10px;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -240,30 +279,22 @@ p {
   color: #091e42;
 }
 
-.modal p {
-  color: #091e42;
-}
-
-/* .modal .modal-image {
-  display: flex;
-  width: 70%;
-} */
-
 .button-actions {
   display: flex;
   align-items: center;
+  margin: 12px;
 }
 
 .button-actions .buttonLink {
   display: flex;
   background: #ff6b00;
   color: #fff;
-  width: 120px;
-  height: 48px;
+  width: 150px;
+  height: 50px;
   align-items: center;
   text-align: center;
-  padding: 12px;
-  margin: 30px;
+  padding: 15px;
+  margin: 20px;
   border: none;
   font-family: 'Inter', sans-serif;
   font-size: 17px;
@@ -271,18 +302,22 @@ p {
   line-height: 24px;
   cursor: pointer;
   transition-duration: 00.4s;
+}
+
+.button-actions .buttonLink img {
+  padding: 10px;
 }
 
 .button-actions .buttonSource {
   display: flex;
   background: #ff6b00;
   color: #fff;
-  width: 120px;
-  height: 48px;
+  width: 150px;
+  height: 50px;
   align-items: center;
   text-align: center;
-  padding: 12px;
-  margin: 30px;
+  padding: 15px;
+  margin: 20px;
   border: none;
   font-family: 'Inter', sans-serif;
   font-size: 17px;
@@ -290,10 +325,6 @@ p {
   line-height: 24px;
   cursor: pointer;
   transition-duration: 00.4s;
-}
-
-.modal .closeBtnImg {
-  cursor: pointer;
 }
 
 /* ----Project Page------- */
@@ -820,6 +851,30 @@ hr {
   }
 
   /* ----Project Container------------ */
+
+  .modal .image-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .modal .technologies-container {
+    align-self: flex-start;
+    margin-left: 50px;
+    padding: 10px;
+  }
+
+  .modal .modal-description {
+    margin: 50px;
+    margin-left: 5px;
+  }
+
+  .modal .button-action {
+    margin-top: 0;
+  }
+
   .project-container {
     display: grid;
     padding: 20px;
