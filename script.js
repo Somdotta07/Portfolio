@@ -4,7 +4,7 @@
 
 const hamburger = document.querySelector('.hamburger');
 const toolbar = document.querySelector('.mobile-menu');
-const form = document.getElementById('contact-form');
+const form = document.getElementById('contact');
 const errorMsg = document.getElementById('text');
 const inputName = document.getElementById('name');
 const inputEmail = document.getElementById('email');
@@ -12,10 +12,10 @@ const inputMsg = document.getElementById('msg');
 
 const projectCard = [
   {
-    name: 'Tonic',
+    name: 'Multi Post Stories',
     image: 'media/pop-up-mobile.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technologies: ['HTML', 'CSS', 'JAVASCRIPT'],
+    technologies: ['html', 'Bootstrap', 'Ruby on Rails'],
     link: '#',
     source: '#',
   },
@@ -72,6 +72,10 @@ function addElement() {
   techList3.textContent = projectCard[0].technologies[2];
   techList3.classList.add('techlist');
   technologies.appendChild(techList3);
+  // container
+  const prjContainer = document.createElement('div');
+  prjContainer.classList.add('prj-container');
+  modal.appendChild(prjContainer);
   // Img container
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('image-container');
@@ -86,6 +90,24 @@ function addElement() {
   description.textContent = projectCard[0].description;
   description.classList.add('modal-description');
   imageContainer.appendChild(description);
+  // Button desktop
+  const buttonContainerdesk = document.createElement('div');
+  buttonContainerdesk.classList.add('button-actionsdesk');
+  description.appendChild(buttonContainerdesk);
+  // Button 1
+  const button1desk = document.createElement('button');
+  button1desk.setAttribute('type', 'button');
+  button1desk.classList.add('buttonLinkdesk');
+  button1desk.innerHTML = 'See Live <img src= "media/Icon.png"> ';
+  button1desk.href = projectCard[0].link;
+  buttonContainerdesk.appendChild(button1desk);
+  // Button 2
+  const button2desk = document.createElement('button');
+  button2desk.setAttribute('type', 'button');
+  button2desk.classList.add('buttonSourcedesk');
+  button2desk.href = projectCard[0].source;
+  button2desk.innerHTML = 'See Source <i class="fab fa-github"></i>';
+  buttonContainerdesk.appendChild(button2desk);
   // Buttons
   const buttonContainer = document.createElement('div');
   buttonContainer.classList.add('button-actions');
@@ -122,84 +144,6 @@ openButton.forEach((event) => {
     addElement();
   });
 });
-
-// window.addEventListener('scroll', () => {
-//   const scroll = window.pageYOffset;
-//   if (scroll > 50) {
-//     container.classList.remove('active');
-//   }
-// });
-
-// openButton.forEach((event) => {
-//   event.addEventListener('click', () => {
-//     backdrop = document.createElement('div');
-//     backdrop.classList.add('backdrop');
-//     document.body.insertBefore(backdrop, container);
-//     // Modal
-//     const modal = document.createElement('div');
-//     modal.classList.add('modal');
-//     // Heading
-//     const heading = document.createElement('h2');
-//     heading.textContent = projectCard[0].name;
-//     modal.appendChild(heading);
-//     // Technologies
-//     const technologies = document.createElement('ul');
-//     technologies.classList.add('technologies-container');
-//     modal.appendChild(technologies);
-//     // Tech groups
-//     const techList1 = document.createElement('li');
-//     techList1.textContent = projectCard[0].technologies[0];
-//     techList1.classList.add('techlist');
-//     technologies.appendChild(techList1);
-//     const techList2 = document.createElement('li');
-//     techList2.textContent = projectCard[0].technologies[1];
-//     techList2.classList.add('techlist');
-//     technologies.appendChild(techList2);
-//     const techList3 = document.createElement('li');
-//     techList3.textContent = projectCard[0].technologies[2];
-//     techList3.classList.add('techlist');
-//     technologies.appendChild(techList3);
-//     // image
-//     const image = document.createElement('img');
-//     image.classList.add('modal-image');
-//     image.src = projectCard[0].image;
-//     modal.appendChild(image);
-//     // paragraph
-//     const description = document.createElement('p');
-//     description.textContent = projectCard[0].description;
-//     description.classList.add('modal-description');
-//     modal.appendChild(description);
-//     // Buttons
-//     const buttonContainer = document.createElement('div');
-//     buttonContainer.classList.add('button-actions');
-//     modal.appendChild(buttonContainer);
-//     // Button 1
-//     const button1 = document.createElement('button');
-//     button1.setAttribute('type', 'button');
-//     button1.classList.add('buttonLink');
-//     button1.textContent = 'See Live';
-//     button1.href = projectCard[0].link;
-//     buttonContainer.appendChild(button1);
-//     // Button 2
-//     const button2 = document.createElement('button');
-//     button2.setAttribute('type', 'button');
-//     button2.classList.add('buttonSource');
-//     button2.href = projectCard[0].source;
-//     button2.textContent = 'See Source';
-//     buttonContainer.appendChild(button2);
-//     document.body.insertBefore(modal, container);
-
-//     // Cross Button
-//     const closeButton = document.createElement('img');
-//     closeButton.classList.add('closeBtnImg');
-//     closeButton.src = 'media/crossBtn.png';
-//     modal.appendChild(closeButton);
-//     closeButton.addEventListener('click', () => {
-//       modal.remove();
-//       backdrop.remove();
-//     });
-//   });
-// });
 
 // Email validation
 
