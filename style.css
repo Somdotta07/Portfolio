@@ -182,12 +182,9 @@ p {
 /* ----Modal----- */
 
 .backdrop {
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  background: #979493;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #807976;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(10px);
   width: 100%;
   height: 100vh;
   top: 0;
@@ -282,7 +279,7 @@ p {
   box-sizing: border-box;
   border: 1px solid #8993a4;
   padding: 10px;
-  margin-left: 10px;
+  margin-left: 8px;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -295,7 +292,7 @@ p {
   align-items: center;
   margin: 12px;
   height: 80%;
-  width: 90%;
+  width: 100%;
 }
 
 .button-actionsdesk {
@@ -333,8 +330,8 @@ p {
   height: 50px;
   align-items: center;
   text-align: center;
-  padding: 15px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
   border: none;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
