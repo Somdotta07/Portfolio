@@ -198,7 +198,7 @@ p {
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
-  position: absolute;
+  position: fixed;
   width: 90%;
   height: auto;
   margin: 20px;
