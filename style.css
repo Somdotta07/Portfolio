@@ -955,11 +955,11 @@ hr {
 
   .project-heading {
     text-align: justify;
-    padding-left: 150px;
+   
   }
 
-  .img {
-    float: left;
+   .img {
+    /* float: left; */
     width: 684px;
     height: 448px;
     padding: 50px;
