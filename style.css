@@ -21,16 +21,16 @@ header {
 header a {
   text-decoration: none;
   text-shadow: 1px 1px 2px red, 0 0 1em orange, 0 0 0.2em rgb(255, 166, 0);
-  transition: all 1s ease-in-out; 
-}
-
-header a:hover {
-  transform: scale(1.1);  
+  transition: all 1s ease-in-out;
 }
 
 .tool-bar a {
   color: #fff;
   padding: 12px 24px;
+}
+
+header a:hover {
+  transform: scale(1.1);
 }
 
 header .hamburger {
@@ -108,20 +108,20 @@ h1 {
   letter-spacing: 0.37px;
   margin: 12px 0;
   width: 22ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
-    
+
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
@@ -413,7 +413,7 @@ hr {
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
-  margin-right: 40%
+  margin-right: 40%;
 }
 
 .lang {
@@ -773,10 +773,10 @@ hr {
   }
 
   .img {
-     align-items: center;
-     margin-right: 35%;
+    align-items: center;
+    margin-right: 35%;
   }
- }
+}
 
 /* ----End of Mobile Version----------------- */
 
@@ -970,10 +970,9 @@ hr {
 
   .project-heading {
     text-align: justify;
-   
   }
 
-   .img {
+  .img {
     /* float: left; */
     width: 684px;
     height: 448px;
@@ -1016,20 +1015,19 @@ hr {
   }
 
   .display {
-    transform-origin:center;
-    transform:perspective(800px) rotateY(25deg);
-    transition:1s;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 1s;
   }
 
   .display:hover {
-    transform:perspective(800px)       rotateY(0deg);
+    transform: perspective(800px)       rotateY(0deg);
   }
 
   .firstproject {
     background-image: url(media/project.png);
     opacity: 1;
     margin-bottom: 10%;
-    
   }
 
   .secondproject,
