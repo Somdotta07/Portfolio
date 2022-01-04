@@ -1,3 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable prefer-destructuring */
+/* eslint-disable no-loop-func */
+
 const hamburger = document.querySelector('.hamburger');
 const toolbar = document.querySelector('.mobile-menu');
 const form = document.getElementById('contact');
