@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
-  /* min-height: 100vh; */
   margin: 0;
   padding: 0;
   top: 0;
@@ -21,17 +20,17 @@ header {
 
 header a {
   text-decoration: none;
+  text-shadow: 1px 1px 2px red, 0 0 1em orange, 0 0 0.2em rgb(255, 166, 0);
+  transition: all 1s ease-in-out;
 }
 
 .tool-bar a {
-  /* font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 700;
-  font-style: normal;
-  text-decoration: none; */
   color: #fff;
   padding: 12px 24px;
+}
+
+header a:hover {
+  transform: scale(1.1);
 }
 
 header .hamburger {
@@ -108,6 +107,22 @@ h1 {
   padding-top: 120px;
   letter-spacing: 0.37px;
   margin: 12px 0;
+  width: 22ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 h4 {
@@ -128,7 +143,7 @@ p {
 }
 
 .background {
-  /* position: absolute; */
+  position: absolute;
   top: 450px;
   right: 0;
 }
@@ -248,7 +263,6 @@ p {
 }
 
 .modal .modal-image {
-  /* position: static; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,7 +271,6 @@ p {
 }
 
 .modal .modal-description {
-  /* position: static; */
   width: 80%;
   height: 80%;
   font-family: 'Inter', sans-serif;
@@ -393,19 +406,19 @@ hr {
 
 .info-detail {
   padding-left: 24px;
-  text-align: center;
+  text-align: left;
   font-family: 'Inter', sans-serif;
   color: #091e42;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
-  margin: 12px;
+  margin-right: 40%;
 }
 
 .lang {
   display: flex;
-  padding-left: 24px;
+  padding-left: 12px;
 }
 
 .lang-box {
@@ -451,10 +464,11 @@ hr {
   display: flex;
   flex-direction: column;
   padding-top: 75px;
-  margin: 24px;
   width: 327px;
   background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/Layout.png);
   background-repeat: no-repeat;
+  border: 5px solid transparent;
+  background-color: #e78849;
 }
 
 .display-title {
@@ -759,8 +773,8 @@ hr {
   }
 
   .img {
-    width: 80%;
     align-items: center;
+    margin-right: 35%;
   }
 }
 
@@ -866,7 +880,7 @@ hr {
 
   /* ----Project Container------------ */
   .modal .headingContainer {
-    width: 93%;
+    width: 100%;
   }
 
   .modal .image-container {
@@ -956,11 +970,10 @@ hr {
 
   .project-heading {
     text-align: justify;
-    padding-left: 150px;
   }
 
   .img {
-    float: left;
+    /* float: left; */
     width: 684px;
     height: 448px;
     padding: 50px;
@@ -995,14 +1008,26 @@ hr {
   }
 
   .project-display {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10%;
+    margin-left: 15%;
+  }
+
+  .display {
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 1s;
+  }
+
+  .display:hover {
+    transform: perspective(800px)       rotateY(0deg);
   }
 
   .firstproject {
     background-image: url(media/project.png);
     opacity: 1;
+    margin-bottom: 10%;
   }
 
   .secondproject,
@@ -1079,12 +1104,6 @@ hr {
     margin-left: auto;
     margin-right: auto;
   }
-
-  /* .prg-div1,
-  .prg-div2,
-  .prg-div3 {
-    list-style-image:;
-  } */
 
   /* ----------Contact Form--------------- */
 
