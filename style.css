@@ -33,8 +33,6 @@ header a:hover {
   transform: scale(1.1);
 }
 
-
-
 header .hamburger {
   display: flex;
   justify-content: center;
