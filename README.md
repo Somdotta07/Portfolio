@@ -19,7 +19,8 @@ It's a portfolio project and template taken from Figma
 
 ## Live Demo
 
-[Live Demo Link]( https://somdotta07.github.io/Portfolio/)
+- [GitHub Link]( https://somdotta07.github.io/Portfolio/)
+- [Netlify](https://gallant-kalam-8922d7.netlify.app)
 
 
 ## Getting Started :
