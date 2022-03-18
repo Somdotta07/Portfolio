@@ -465,10 +465,28 @@ hr {
   flex-direction: column;
   padding-top: 75px;
   width: 327px;
-  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/Layout.png);
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
   background-repeat: no-repeat;
   border: 5px solid transparent;
   background-color: #e78849;
+}
+.first-mobile {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/recipeapp.PNG);
+}
+.second-mobile {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/Math\ magician.png);
+}
+.third-mobile {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/Space\ Travel.PNG);
+}
+.forth-mobile {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/Breaking\ bad.png);
+}
+.fifth-mobile {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/awesomebooks.png);
+}
+.sixth-mobile {
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/Coviddata.PNG);
 }
 
 .display-title {
@@ -1025,25 +1043,31 @@ hr {
   }
 
   .firstproject {
-    background-image: url(media/project.png);
+    background-image: url(media/recipeapp.PNG);
     opacity: 1;
     margin-bottom: 10%;
   }
 
   .secondproject,
   .fifthproject {
-    background-image: url(media/layout2nd.png);
+    background-image: url(media/Math\ magician.png);
     opacity: 1;
+  }
+  .fifthproject {
+    background-image: url(media/awesomebooks.png);
   }
 
   .thirdproject,
   .sixthproject {
-    background-image: url(media/layout3rd.png);
+    background-image: url(media/Space\ Travel.PNG);
     opacity: 1;
+  }
+  .sixthproject {
+    background-image: url(media/Climbing\ world\ cup.PNG);
   }
 
   .forthproject {
-    background-image: url(media/Layout.png);
+    background-image: url(media/Breaking\ bad.png);
     opacity: 1;
   }
 
