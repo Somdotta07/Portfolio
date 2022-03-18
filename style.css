@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
-  margin: auto;
+  margin: 0;
   padding: 0;
   top: 0;
 }
@@ -20,17 +20,17 @@ header {
 
 header a {
   text-decoration: none;
+  text-shadow: 1px 1px 2px red, 0 0 1em orange, 0 0 0.2em rgb(255, 166, 0);
+  transition: all 1s ease-in-out;
 }
 
 .tool-bar a {
-  /* font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 700;
-  font-style: normal;
-  text-decoration: none; */
   color: #fff;
   padding: 12px 24px;
+}
+
+header a:hover {
+  transform: scale(1.1);
 }
 
 header .hamburger {
@@ -63,6 +63,11 @@ header .mobile-menu ul li {
   line-height: 44px;
   align-items: center;
   color: #fff5e1;
+}
+
+.modal ul {
+  display: flex;
+  padding-left: 24px;
 }
 
 header .mobile-menu ul {
@@ -102,6 +107,22 @@ h1 {
   padding-top: 120px;
   letter-spacing: 0.37px;
   margin: 12px 0;
+  width: 22ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 h4 {
@@ -160,6 +181,10 @@ p {
   color: #505f79;
 }
 
+.button-actions .buttonSource i {
+  padding: 4px;
+}
+
 .links .top i:hover {
   color: #15aabf;
 }
@@ -167,6 +192,166 @@ p {
 .links .top li:hover {
   margin-top: -2px;
   margin-bottom: 3px;
+}
+
+/* ----Modal----- */
+
+.backdrop {
+  background: #807976;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: 10px 10px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  position: fixed;
+  width: 90%;
+  height: auto;
+  margin: 20px;
+  justify-content: center;
+  background: #fdfafa;
+  border: 1px solid #d9dbe0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.modal .headingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.modal h2 {
+  display: flex;
+  color: #172b4d;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.modal .closeBtnImg {
+  border: 2px solid #edf0f3;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+.modal .image-container {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: auto;
+  margin-left: 12px;
+  align-self: center;
+  justify-content: center;
+}
+
+.modal .modal-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 90%;
+}
+
+.modal .modal-description {
+  width: 80%;
+  height: 80%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-left: 24px;
+}
+
+.modal .technologies-container {
+  align-self: flex-start;
+  margin-left: 15px;
+}
+
+.modal .techlist {
+  list-style-type: none;
+  box-sizing: border-box;
+  border: 1px solid #8993a4;
+  padding: 10px;
+  margin-left: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #091e42;
+}
+
+.button-actions {
+  display: flex;
+  align-items: center;
+  margin: 12px;
+  height: 80%;
+  width: 100%;
+}
+
+.button-actionsdesk {
+  display: none;
+}
+
+.button-actions .buttonLink {
+  display: flex;
+  background: #ff6b00;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  cursor: pointer;
+  transition-duration: 00.4s;
+}
+
+.button-actions .buttonLink img {
+  padding: 10px;
+}
+
+.button-actions .buttonSource {
+  display: flex;
+  background: #ff6b00;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24px;
+  cursor: pointer;
+  transition-duration: 00.4s;
 }
 
 /* ----Project Page------- */
@@ -221,19 +406,19 @@ hr {
 
 .info-detail {
   padding-left: 24px;
-  text-align: center;
+  text-align: left;
   font-family: 'Inter', sans-serif;
   color: #091e42;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
-  margin: 12px;
+  margin-right: 40%;
 }
 
 .lang {
   display: flex;
-  padding-left: 24px;
+  padding-left: 12px;
 }
 
 .lang-box {
@@ -279,10 +464,11 @@ hr {
   display: flex;
   flex-direction: column;
   padding-top: 75px;
-  margin: 24px;
   width: 327px;
   background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/Layout.png);
   background-repeat: no-repeat;
+  border: 5px solid transparent;
+  background-color: #e78849;
 }
 
 .display-title {
@@ -592,8 +778,8 @@ hr {
   }
 
   .img {
-    width: 80%;
     align-items: center;
+    margin-right: 35%;
   }
 }
 
@@ -698,6 +884,83 @@ hr {
   }
 
   /* ----Project Container------------ */
+  .modal .headingContainer {
+    width: 100%;
+  }
+
+  .modal .image-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .modal .technologies-container {
+    align-self: flex-start;
+    margin-left: 20px;
+    padding: 10px;
+  }
+
+  .modal .modal-description {
+    margin: 50px;
+    margin-left: 5px;
+  }
+
+  .button-actions {
+    display: none;
+  }
+
+  .button-actionsdesk {
+    display: flex;
+    align-items: center;
+    margin: 12px;
+    width: 100%;
+    margin-top: 200px;
+  }
+
+  .button-actionsdesk .buttonLinkdesk {
+    display: flex;
+    background: #ff6b00;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 24px;
+    cursor: pointer;
+    transition-duration: 00.4s;
+  }
+
+  .button-actionsdesk .buttonLinkdesk img {
+    padding: 10px;
+  }
+
+  .button-actionsdesk .buttonSourcedesk {
+    display: flex;
+    background: #ff6b00;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    padding: 17px;
+    margin: 20px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 24px;
+    cursor: pointer;
+    transition-duration: 00.4s;
+  }
+
   .project-container {
     display: grid;
     padding: 20px;
@@ -712,11 +975,10 @@ hr {
 
   .project-heading {
     text-align: justify;
-    padding-left: 150px;
   }
 
   .img {
-    float: left;
+    /* float: left; */
     width: 684px;
     height: 448px;
     padding: 50px;
@@ -751,14 +1013,26 @@ hr {
   }
 
   .project-display {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10%;
+    margin-left: 15%;
+  }
+
+  .display {
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 1s;
+  }
+
+  .display:hover {
+    transform: perspective(800px)       rotateY(0deg);
   }
 
   .firstproject {
     background-image: url(media/project.png);
     opacity: 1;
+    margin-bottom: 10%;
   }
 
   .secondproject,
@@ -835,12 +1109,6 @@ hr {
     margin-left: auto;
     margin-right: auto;
   }
-
-  /* .prg-div1,
-  .prg-div2,
-  .prg-div3 {
-    list-style-image:;
-  } */
 
   /* ----------Contact Form--------------- */
 

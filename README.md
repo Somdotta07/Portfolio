@@ -19,7 +19,8 @@ It's a portfolio project and template taken from Figma
 
 ## Live Demo
 
-[Live Demo Link]( https://somdotta07.github.io/Portfolio/)
+- [GitHub Link]( https://somdotta07.github.io/Portfolio/)
+- [Netlify](https://gallant-kalam-8922d7.netlify.app)
 
 
 ## Getting Started :
@@ -47,7 +48,7 @@ Use an IDE to develop and run it into your browser.
 
 - [Github](https://github.com/Somdotta07)
 - [Twitter](https://github.com/Somdotta07)
-- [LinkedIn](https://www.linkedin.com/in/somdotta-sarkar-8849b419/)
+- [LinkedIn](www.linkedin.com/in/somdottasarkar)
 
 
 👤 Shahier Nashaat
