@@ -3,8 +3,8 @@
 
 const hamburger = document.querySelector('.hamburger');
 const toolbar = document.querySelector('.mobile-menu');
-const form = document.getElementById('contact');
-const errorMsg = document.getElementById('text');
+// const form = document.getElementById('contact');
+// const errorMsg = document.getElementById('text');
 const inputName = document.getElementById('name');
 const inputEmail = document.getElementById('email');
 const inputMsg = document.getElementById('msg');
