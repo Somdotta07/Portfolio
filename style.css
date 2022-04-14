@@ -470,36 +470,42 @@ hr {
   border: 5px solid transparent;
   background-color: #e78849;
 }
+
 .first-mobile {
   background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/recipeapp.PNG);
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 30%;
 }
+
 .second-mobile {
   background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/Math\ magician.png);
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 30%;
 }
+
 .third-mobile {
   background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/Space\ Travel.PNG);
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 30%;
 }
+
 .forth-mobile {
   background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/Breaking\ bad.png);
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 30%;
 }
+
 .fifth-mobile {
   background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/awesomebooks.png);
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 30%;
 }
+
 .sixth-mobile {
   background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(media/Coviddata.PNG);
   background-size: cover;
@@ -854,6 +860,10 @@ hr {
     display: none;
   }
 
+  .display a {
+    text-decoration: none;
+  }
+
   .tool-bar a {
     left: 12px;
     top: 10px;
@@ -1076,6 +1086,7 @@ hr {
     padding-top: 60%;
     opacity: 1;
   }
+
   .fifthproject {
     background-image: url(media/awesomebooks.png);
     background-size: contain;
@@ -1091,6 +1102,7 @@ hr {
     padding-top: 60%;
     opacity: 1;
   }
+
   .sixthproject {
     background-image: url(media/Covid.png);
     background-size: contain;
@@ -1108,16 +1120,6 @@ hr {
 
   .contact-form form ul {
     width: 90%;
-  }
-
-  /* .firstproject:first-child ul,
-  .firstproject:first-child h3,
-  .firstproject:first-child p {
-    visibility: hidden;
-  } */
-
-  .display a {
-    text-decoration: none;
   }
 
   .display .btn-dis {
