@@ -20,7 +20,7 @@ It's a portfolio project and template taken from Figma
 ## Live Demo
 
 - [GitHub Link]( https://somdotta07.github.io/Portfolio/)
-- [Netlify](https://gallant-kalam-8922d7.netlify.app)
+- [Netlify](https://somdotta-sarkar.netlify.app)
 
 
 ## Getting Started :
