@@ -98,7 +98,7 @@ function addElement() {
   const button1desk = document.createElement('button');
   button1desk.setAttribute('type', 'button');
   button1desk.classList.add('buttonLinkdesk');
-  button1desk.innerHTML = 'See Live <img src= "media/Icon.png"> ';
+  button1desk.innerHTML = 'See Live <img src= "media/Category page.PNG"> ';
   button1desk.href = projectCard[0].link;
   buttonContainerdesk.appendChild(button1desk);
   // Button 2
