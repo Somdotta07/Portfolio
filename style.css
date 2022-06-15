@@ -728,6 +728,11 @@ hr {
   color: #3c3a39;
 }
 
+.contact-form #text {
+  font-family: 'Inter', sans-serif;
+  margin: 10px;
+}
+
 .contact-form form button {
   padding: 12px;
   position: static;

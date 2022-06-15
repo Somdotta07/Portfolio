@@ -1,11 +1,10 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable prefer-destructuring */
-/* eslint-disable no-loop-func */
+
+// Mobile menu
 
 const hamburger = document.querySelector('.hamburger');
 const toolbar = document.querySelector('.mobile-menu');
-const form = document.getElementById('contact');
-const errorMsg = document.getElementById('text');
+// const form = document.getElementById('contact');
+// const errorMsg = document.getElementById('text');
 const inputName = document.getElementById('name');
 const inputEmail = document.getElementById('email');
 const inputMsg = document.getElementById('msg');
@@ -35,6 +34,16 @@ for (let i = 0; i < links.length; i += 1) {
     toolbar.classList.add('display-mobile');
   });
 }
+
+
+// Email validation
+const form = document.getElementById('contact-form');
+const errorMsg = document.getElementById('text');
+const email = document.getElementById('email');
+
+form.addEventListener('submit', (event) => {
+  const pattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+  if (email.value.match(pattern)) {
 
 //  ---Object declaration----//
 
@@ -150,6 +159,7 @@ openButton.forEach((event) => {
 form.addEventListener('submit', (event) => {
   const pattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
   if (inputEmail.value.match(pattern)) {
+
     errorMsg.innerHTML = 'This is a valid Email';
     errorMsg.style.color = '#00ff00';
   } else {
@@ -160,6 +170,11 @@ form.addEventListener('submit', (event) => {
 });
 
 // preserve data in the browser
+
+const inputName = document.getElementById('name');
+const inputEmail = document.getElementById('email');
+const inputMsg = document.getElementById('msg');
+
 
 const addForm = (event) => {
   event.preventDefault();
